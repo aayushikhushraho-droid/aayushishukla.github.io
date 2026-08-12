@@ -26,6 +26,8 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  overflow-x: hidden;
+  width: 100%;
 }
 img, svg { max-width: 100%; display: block; }
 a { text-decoration: none; color: inherit; }
@@ -37,8 +39,10 @@ ul { list-style: none; }
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  overflow-x: hidden;
+  box-sizing: border-box;
 }
 
 /* Typography */
@@ -206,4 +210,184 @@ h3 { font-size: 1.3rem; font-weight: 600; color: var(--primary-navy); }
 }
 .profile-photo-container img:hover {
   transform: scale(1.05);
+}
+
+/* ===== MOBILE FIXES ===== */
+@media (max-width: 768px) {
+  * {
+    max-width: 100vw;
+  }
+  
+  body {
+    padding: 0;
+    margin: 0;
+  }
+  
+  .container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    width: 100%;
+    overflow-x: hidden;
+  }
+  
+  .section-padding {
+    padding: 2rem 0;
+  }
+  
+  h1 {
+    font-size: 1.8rem;
+    text-align: center;
+    word-wrap: break-word;
+  }
+  
+  h2 {
+    font-size: 1.4rem;
+    text-align: center;
+  }
+  
+  h3 {
+    font-size: 1.1rem;
+    text-align: center;
+  }
+  
+  p {
+    text-align: center;
+    padding: 0 0.5rem;
+    word-wrap: break-word;
+  }
+  
+  .hero {
+    padding: 2rem 0.5rem;
+  }
+  
+  .hero-sub {
+    font-size: 1rem;
+    padding: 0 0.5rem;
+  }
+  
+  .badge {
+    font-size: 0.8rem;
+    padding: 0.4rem 0.8rem;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .trust-grid {
+    gap: 0.8rem;
+    padding: 0 0.5rem;
+    text-align: center;
+  }
+  
+  .trust-grid span {
+    font-size: 0.85rem;
+  }
+  
+  .problem-grid,
+  .cred-grid,
+  .pricing-grid,
+  .blog-grid,
+  .faq-grid,
+  .offer-grid {
+    grid-template-columns: 1fr;
+    padding: 0 0.5rem;
+    gap: 1rem;
+  }
+  
+  .problem-card,
+  .cred-card,
+  .pricing-card,
+  .blog-card,
+  .faq-item {
+    margin: 0;
+    text-align: center;
+  }
+  
+  .pricing-card ul {
+    text-align: left;
+    padding-left: 1rem;
+  }
+  
+  .pricing-card li {
+    font-size: 0.9rem;
+  }
+  
+  .callback-form {
+    padding: 1.5rem 1rem;
+    margin: 1rem;
+  }
+  
+  .callback-form input,
+  .callback-form select {
+    font-size: 16px;
+    padding: 0.7rem;
+  }
+  
+  .contact-options {
+    flex-direction: column;
+    padding: 0 1rem;
+  }
+  
+  .contact-options .btn-primary {
+    width: 100%;
+    margin: 0.3rem 0;
+  }
+  
+  .btn-primary,
+  .btn-secondary {
+    display: block;
+    width: 90%;
+    margin: 0.5rem auto;
+    text-align: center;
+    font-size: 0.95rem;
+    padding: 0.8rem 1rem;
+  }
+  
+  .final-cta {
+    margin: 1rem;
+    padding: 2rem 1rem;
+  }
+  
+  .urgency-box {
+    margin: 1rem;
+    padding: 1.5rem 1rem;
+  }
+  
+  .community-box {
+    margin: 1rem;
+    padding: 1.5rem 1rem;
+  }
+  
+  .about-story p {
+    padding: 0 0.5rem;
+  }
+  
+  .legal-page {
+    padding: 0 1rem;
+  }
+  
+  .table-responsive {
+    margin: 1rem;
+    font-size: 0.8rem;
+  }
+  
+  .comparison-table th,
+  .comparison-table td {
+    padding: 0.5rem;
+    font-size: 0.75rem;
+  }
+  
+  .profile-photo-container img {
+    width: 150px !important;
+    height: 150px !important;
+  }
+  
+  .nav-container {
+    padding: 0 1rem;
+  }
 }
