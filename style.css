@@ -278,16 +278,18 @@ h3 { font-size: 1.3rem; font-weight: 600; color: var(--primary-navy); }
     margin-right: auto;
   }
   
-  /* Square photo on mobile - large and filling the screen */
+    /* Square photo on mobile - proper size with spacing */
   img[src*="image.jpg"] {
-    width: 90% !important;
-    max-width: 450px !important;
+    width: 75% !important;
+    max-width: 280px !important;
     aspect-ratio: 1 / 1 !important;
     object-fit: cover !important;
     border-radius: 0 !important;
     display: block !important;
     margin-left: auto !important;
     margin-right: auto !important;
+    margin-top: 1rem !important;
+    margin-bottom: 1rem !important;
   }
   
   .trust-grid {
