@@ -278,10 +278,10 @@ h3 { font-size: 1.3rem; font-weight: 600; color: var(--primary-navy); }
     margin-right: auto;
   }
   
-     /* Small square photo on mobile with good spacing */
+       /* Very small square photo on mobile */
   img[src*="image.jpg"] {
-    width: 55% !important;
-    max-width: 200px !important;
+    width: 40% !important;
+    max-width: 150px !important;
     aspect-ratio: 1 / 1 !important;
     object-fit: cover !important;
     border-radius: 0 !important;
