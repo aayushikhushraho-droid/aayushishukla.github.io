@@ -270,12 +270,24 @@ h3 { font-size: 1.3rem; font-weight: 600; color: var(--primary-navy); }
     padding: 0.4rem 0.8rem;
   }
   
-  img {
+      img {
     max-width: 100%;
     height: auto;
     display: block;
     margin-left: auto;
     margin-right: auto;
+  }
+  
+  /* Square photo on mobile - large and filling the screen */
+  img[src*="image.jpg"] {
+    width: 90% !important;
+    max-width: 450px !important;
+    aspect-ratio: 1 / 1 !important;
+    object-fit: cover !important;
+    border-radius: 0 !important;
+    display: block !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
   }
   
   .trust-grid {
@@ -382,12 +394,56 @@ h3 { font-size: 1.3rem; font-weight: 600; color: var(--primary-navy); }
     font-size: 0.75rem;
   }
   
-  .profile-photo-container img {
-    width: 150px !important;
-    height: 150px !important;
-  }
+
   
   .nav-container {
     padding: 0 1rem;
   }
+}
+
+
+/* ===== DESKTOP LAYOUT FIXES ===== */
+
+img[src*="image.jpg"] {
+  display: block !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  width: 450px !important;
+  max-width: 450px !important;
+  aspect-ratio: 1 / 1 !important;
+  object-fit: cover !important;
+  border-radius: 0 !important;
+}
+
+.about-story {
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.hero {
+  text-align: center;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero-sub {
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contact-options {
+  justify-content: center;
+}
+
+.callback-form {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.text-center {
+  text-align: center;
 }
