@@ -110,22 +110,24 @@ h3 { font-size: 1.3rem; font-weight: 700; color: var(--primary-navy); }
 .main-nav a { font-weight: 600; font-size: 1rem; padding: 0.5rem 0; border-bottom: 2px solid transparent; transition: 0.2s; }
 .main-nav a:hover, .main-nav a.active { color: var(--accent-emerald); border-bottom-color: var(--accent-emerald); }
 
-/* ===== 3-COLUMN HOME OFFERINGS ===== */
-.home-offerings {
-  display: grid;
-  grid-template-columns: 1fr;
+/* ===== HOME PAGE LAYOUT ===== */
+.home-layout {
+  display: flex;
+  flex-direction: column;
   gap: 1.5rem;
-  max-width: 1100px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
-/* ===== BUSINESS HERO BOX ===== */
-.business-hero {
+.business-hero-horizontal {
   background: #0A192F;
   border-radius: 16px;
   box-shadow: 0 8px 25px rgba(0,0,0,0.15);
   border: 2px solid #10B981;
+}
+
+.two-box-row {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
 }
 
 .offering-col {
@@ -137,7 +139,7 @@ h3 { font-size: 1.3rem; font-weight: 700; color: var(--primary-navy); }
   box-shadow: 0 8px 20px rgba(0,0,0,0.1);
 }
 
-/* ===== DESKTOP FLEX LAYOUT ===== */
+/* ===== DESKTOP FLEX LAYOUT (About Page) ===== */
 .hero-flex,
 .about-flex {
   display: flex;
@@ -317,11 +319,16 @@ h3 { font-size: 1.3rem; font-weight: 700; color: var(--primary-navy); }
   
   .badge { font-size: 0.85rem; padding: 0.5rem 1rem; }
   
-  .home-offerings {
+  /* Home layout on mobile */
+  .home-layout {
     gap: 1rem;
   }
   
-  .business-hero {
+  .two-box-row {
+    gap: 1rem;
+  }
+  
+  .business-hero-horizontal {
     max-width: 100%;
     margin: 0 auto;
   }
@@ -393,23 +400,30 @@ h3 { font-size: 1.3rem; font-weight: 700; color: var(--primary-navy); }
   h3 { font-size: 1.3rem; }
   p { font-size: 1.05rem; }
   
-  /* 3 columns side by side on desktop */
-  .home-offerings {
-    grid-template-columns: 1fr 1fr 1fr;
-    align-items: stretch;
-  }
-  
-  .offering-col {
-    display: flex;
+  /* Home page desktop layout */
+  .home-layout {
     flex-direction: column;
-    justify-content: center;
+    gap: 2rem;
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
   }
   
-  .business-hero {
-    max-width: 100%;
+  .business-hero-horizontal {
+    width: 100%;
   }
   
-  .offering-col {
-    max-width: 100%;
+  .two-box-row {
+    flex-direction: row;
+    gap: 2rem;
+  }
+  
+  .two-box-row .offering-col {
+    flex: 1;
+  }
+  
+  /* About page desktop */
+  .about-flex {
+    max-width: 900px;
   }
 }
