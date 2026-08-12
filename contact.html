@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+  <meta name="description" content="Contact Aayushi Shukla for MFD growth via call, WhatsApp, or callback form.">
+  <title>Contact | Aayushi Shukla</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-container">
+      <a href="index.html" class="logo">Aayushi<span>Shukla</span></a>
+      <input type="checkbox" id="menu-toggle" class="menu-toggle-checkbox">
+      <label for="menu-toggle" class="menu-toggle-label" aria-label="Toggle menu">
+        <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+      </label>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="blog.html">Growth Hub</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container section-padding">
+    <h1>Let's Scale Your Mutual Fund Practice.</h1>
+    <div class="contact-options">
+      <a href="tel:+917742887873" class="btn-primary" style="margin:0.5rem;">📞 Direct Call</a>
+      <a href="https://wa.me/917742887873?text=Hi%20Aayushi,%20I%20want%20to%20grow%20my%20MFD%20practice" target="_blank" rel="noopener noreferrer" class="btn-primary btn-whatsapp" style="margin:0.5rem;">💬 Chat on WhatsApp</a>
+    </div>
+
+    <div class="callback-form">
+      <h2>Request 24-Hour Call Back</h2>
+      <form id="callbackForm" onsubmit="handleCallback(event)">
+        <input type="text" id="name" placeholder="Full Name" required>
+        <input type="text" id="city" placeholder="City" required>
+        <input type="tel" id="phone" placeholder="Phone/WhatsApp Number" required>
+        <select id="aum" required>
+          <option value="">Current AUM Range</option>
+          <option>Below ₹1 Cr</option>
+          <option>₹1 Cr - 5 Cr</option>
+          <option>₹5 Cr - 25 Cr</option>
+          <option>Above ₹25 Cr</option>
+        </select>
+        <button type="submit" class="btn-primary">Send via WhatsApp</button>
+      </form>
+    </div>
+
+    <div class="community-box">
+      <h3>📚 Join Free WhatsApp Community</h3>
+      <p>SIF & PMS NISM Exam Prep, daily tips, and peer discussions.</p>
+      <a href="https://wa.me/917742887873?text=Add%20me%20to%20SIF%20PMS%20Exam%20Prep%20Group" target="_blank" rel="noopener noreferrer" class="btn-whatsapp btn-primary">Join Free Group</a>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <p>© 2026 Aayushi Shukla. Fintech Digital Growth Specialist.</p>
+      <nav class="footer-links">
+        <a href="privacy.html">Privacy</a>
+        <a href="terms.html">Terms</a>
+        <a href="disclaimer.html">Disclaimer</a>
+      </nav>
+      <p class="sebi-note">SEBI educational & non-investment advice. Services limited to website building and digital marketing consulting.</p>
+    </div>
+  </footer>
+  <script>
+    function handleCallback(e) {
+      e.preventDefault();
+      const name = document.getElementById('name').value;
+      const city = document.getElementById('city').value;
+      const phone = document.getElementById('phone').value;
+      const aum = document.getElementById('aum').value;
+      const message = `Hi Aayushi, I want a callback. Name: ${name}, City: ${city}, Phone: ${phone}, AUM: ${aum}`;
+      window.open(`https://wa.me/917742887873?text=${encodeURIComponent(message)}`, '_blank');
+    }
+  </script>
+</body>
+</html>
