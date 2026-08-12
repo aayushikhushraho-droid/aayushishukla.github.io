@@ -13,9 +13,7 @@
       <a href="index.html" class="logo">Aayushi<span>Shukla</span></a>
       <input type="checkbox" id="menu-toggle" class="menu-toggle-checkbox">
       <label for="menu-toggle" class="menu-toggle-label" aria-label="Toggle menu">
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span>
+        <span class="bar"></span><span class="bar"></span><span class="bar"></span>
       </label>
       <nav class="main-nav">
         <ul>
@@ -33,37 +31,59 @@
     <!-- Hero Section -->
     <section class="hero container">
       
-      <!-- Photo - 40% wider, 30% taller -->
-      <div style="text-align: center; margin-bottom: 1rem;">
-        <img 
-          src="image.jpg" 
-          alt="Aayushi Shukla" 
-          class="hero-photo"
-        >
+      <!-- Desktop: Photo left, Text right | Mobile: Stacked -->
+      <div class="hero-flex">
+        
+        <!-- Photo -->
+        <div class="hero-photo-wrap">
+          <img 
+            src="image.jpg" 
+            alt="Aayushi Shukla" 
+            class="hero-photo"
+          >
+        </div>
+
+        <!-- Text Content -->
+        <div class="hero-content">
+          <!-- Name -->
+          <h1 style="font-size: 2rem; margin-bottom: 0.3rem; color: #0A192F; font-weight: 800;">Aayushi Shukla</h1>
+          
+          <!-- Badge -->
+          <div class="badge" style="font-size: 1rem; font-weight: 700; padding: 0.6rem 1.2rem; margin-bottom: 1rem;">
+            🎓 SEBI Certified | Ex-Top Bank & Wealth House
+          </div>
+
+          <!-- Tagline -->
+          <p style="font-size: 1.2rem; font-weight: 600; color: #1E293B; margin-bottom: 1.5rem; line-height: 1.5;">
+            Grow Your Mutual Fund Distribution Business & Build Your Online <span style="color: #10B981; font-weight: 800;">Pahchan</span>
+          </p>
+
+          <!-- WhatsApp CTA -->
+          <div style="margin-bottom: 1.5rem;">
+            <a href="https://wa.me/917742887873?text=I%20want%20to%20join%20the%20MFD%20Growth%20Group" target="_blank" rel="noopener noreferrer" class="btn-primary btn-whatsapp" style="font-size: 1.1rem; padding: 0.9rem 2rem; font-weight: 700;">
+              Join Free SIF & PMS Certification Classes
+            </a>
+          </div>
+        </div>
+
       </div>
 
-      <!-- Name -->
-      <h1 style="font-size: 2rem; margin-bottom: 0.3rem; color: #0A192F; font-weight: 800;">Aayushi Shukla</h1>
-      
-      <!-- Badge -->
-      <div class="badge" style="font-size: 1rem; font-weight: 700; padding: 0.6rem 1.2rem; margin-bottom: 1rem;">
-        🎓 SEBI Certified | Ex-Top Bank & Wealth House
-      </div>
-
-      <!-- Tagline -->
-      <p style="font-size: 1.2rem; font-weight: 600; color: #1E293B; max-width: 380px; margin: 0 auto 1.5rem; line-height: 1.5;">
-        Grow Your Mutual Fund Distribution Business & Build Your Online <span style="color: #10B981; font-weight: 800;">Pahchan</span>
-      </p>
-
-      <!-- WhatsApp CTA -->
-      <div style="margin-bottom: 1.8rem;">
-        <a href="https://wa.me/917742887873?text=I%20want%20to%20join%20the%20MFD%20Growth%20Group" target="_blank" rel="noopener noreferrer" class="btn-primary btn-whatsapp" style="font-size: 1.1rem; padding: 0.9rem 2rem; font-weight: 700;">
-          🟢 Join Free SIF & PMS Certification Classes
+      <!-- Personal Website CTA -->
+      <div style="background: #ffffff; border: 3px solid #10B981; border-radius: 14px; padding: 1.5rem; max-width: 500px; margin-left: auto; margin-right: auto; margin-bottom: 1.5rem;">
+        <p style="font-size: 1.3rem; font-weight: 800; color: #0A192F; margin-bottom: 0.8rem;">🌐 GET YOUR PERSONAL WEBSITE</p>
+        <p style="font-size: 1.1rem; font-weight: 700; color: #10B981; margin-bottom: 0.5rem;">
+          Starting at ₹9,999
+        </p>
+        <p style="font-size: 1rem; color: #1E293B; line-height: 1.6; margin-bottom: 1rem;">
+          High-speed, SEBI-compliant website with Google My Business setup & WhatsApp lead capture.
+        </p>
+        <a href="services.html" style="color: #10B981; font-weight: 800; font-size: 1.1rem; text-decoration: underline;">
+          View Packages & Pricing →
         </a>
       </div>
 
       <!-- Free Exam Support -->
-      <div style="background: #f0fdf4; border-radius: 14px; padding: 1.5rem; margin-bottom: 1.5rem; max-width: 400px; margin-left: auto; margin-right: auto; border: 2px solid #10B981;">
+      <div style="background: #f0fdf4; border-radius: 14px; padding: 1.5rem; margin-bottom: 1.5rem; max-width: 500px; margin-left: auto; margin-right: auto; border: 2px solid #10B981;">
         <p style="font-size: 1.3rem; font-weight: 800; color: #0A192F; margin-bottom: 0.8rem;">📚 FREE EXAM SUPPORT</p>
         <p style="font-size: 1.1rem; font-weight: 700; color: #10B981; margin-bottom: 0.8rem; line-height: 1.6;">
           NISM V-A • NISM V-D • NISM XXI-A • SIF • PMS
@@ -73,20 +93,6 @@
         </p>
         <a href="https://wa.me/917742887873?text=Add%20me%20to%20exam%20prep%20group" target="_blank" rel="noopener noreferrer" style="color: #10B981; font-weight: 800; font-size: 1.1rem; text-decoration: underline;">
           Join Free Exam Prep Group →
-        </a>
-      </div>
-
-      <!-- Website & Services -->
-      <div style="background: #ffffff; border: 3px solid #10B981; border-radius: 14px; padding: 1.5rem; max-width: 400px; margin-left: auto; margin-right: auto;">
-        <p style="font-size: 1.3rem; font-weight: 800; color: #0A192F; margin-bottom: 0.8rem;">🌐 GET YOUR PROFESSIONAL WEBSITE</p>
-        <p style="font-size: 1.1rem; font-weight: 700; color: #10B981; margin-bottom: 0.5rem;">
-          Starting at ₹9,999
-        </p>
-        <p style="font-size: 1rem; color: #1E293B; line-height: 1.6; margin-bottom: 1rem;">
-          High-speed, SEBI-compliant website with Google My Business setup & WhatsApp lead capture.
-        </p>
-        <a href="services.html" style="color: #10B981; font-weight: 800; font-size: 1.1rem; text-decoration: underline;">
-          View Packages & Pricing →
         </a>
       </div>
 
