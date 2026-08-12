@@ -110,6 +110,26 @@ h3 { font-size: 1.3rem; font-weight: 700; color: var(--primary-navy); }
 .main-nav a { font-weight: 600; font-size: 1rem; padding: 0.5rem 0; border-bottom: 2px solid transparent; transition: 0.2s; }
 .main-nav a:hover, .main-nav a.active { color: var(--accent-emerald); border-bottom-color: var(--accent-emerald); }
 
+/* ===== BUSINESS HERO GRAPHIC BOX ===== */
+.business-hero {
+  background: linear-gradient(135deg, #0A192F 0%, #1a3a5c 50%, #10B981 150%);
+  border-radius: 16px;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+  border: 2px solid #10B981;
+}
+
+.offering-box {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.offering-box:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
 /* ===== DESKTOP FLEX LAYOUT ===== */
 .hero-flex,
 .about-flex {
@@ -133,7 +153,7 @@ h3 { font-size: 1.3rem; font-weight: 700; color: var(--primary-navy); }
   text-align: left;
 }
 
-/* ===== PHOTO STYLING ===== */
+/* ===== PHOTO STYLING (About Page) ===== */
 .hero-photo,
 .about-photo {
   width: 280px;
@@ -279,7 +299,7 @@ h3 { font-size: 1.3rem; font-weight: 700; color: var(--primary-navy); }
     text-align: center;
   }
 
-  /* Bigger photo on mobile */
+  /* Photo size on mobile (About Page) */
   .hero-photo,
   .about-photo {
     width: 210px;
@@ -289,6 +309,15 @@ h3 { font-size: 1.3rem; font-weight: 700; color: var(--primary-navy); }
   .hero { padding: 0.5rem 0.5rem 1.5rem; }
   
   .badge { font-size: 0.85rem; padding: 0.5rem 1rem; }
+  
+  .business-hero {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  
+  .offering-box {
+    max-width: 100%;
+  }
   
   .problem-grid,
   .cred-grid,
@@ -352,4 +381,12 @@ h3 { font-size: 1.3rem; font-weight: 700; color: var(--primary-navy); }
   h2 { font-size: 1.8rem; }
   h3 { font-size: 1.3rem; }
   p { font-size: 1.05rem; }
+  
+  .business-hero {
+    max-width: 600px;
+  }
+  
+  .offering-box {
+    max-width: 600px;
+  }
 }
