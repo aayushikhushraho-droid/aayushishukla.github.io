@@ -336,4 +336,20 @@ h3 { font-size: 1.3rem; font-weight: 700; color: var(--primary-navy); }
   .urgency-box { margin: 1rem 0.5rem; padding: 1.2rem 0.8rem; }
   .community-box { margin: 1rem 0.5rem; padding: 1.2rem 0.8rem; }
   
-  .legal-page { padding: 0 0.8rem;
+  .legal-page { padding: 0 0.8rem; }
+  .legal-page h1 { font-size: 1.6rem; }
+  .legal-page p { font-size: 0.95rem; }
+  
+  .table-responsive { margin: 0.8rem; font-size: 0.8rem; }
+  .comparison-table th, .comparison-table td { padding: 0.5rem; font-size: 0.75rem; }
+  
+  .nav-container { padding: 0 0.8rem; }
+}
+
+/* ===== DESKTOP FIXES ===== */
+@media (min-width: 769px) {
+  h1 { font-size: 2.5rem; }
+  h2 { font-size: 1.8rem; }
+  h3 { font-size: 1.3rem; }
+  p { font-size: 1.05rem; }
+}
